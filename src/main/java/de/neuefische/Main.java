@@ -14,4 +14,18 @@ public class Main {
 
         return String.valueOf(number);
     }
+
+    public static boolean smallerThenZero(int input) {
+        if (input > 0) {
+            return true;
+        }
+        return false;
+    }
+
+    public static int sumSquareOrSubstract(int num1, int num2) {
+        if (num1 > num2) {
+            return num1 + num2;
+        }
+        return num1 * num2;
+    }
 }

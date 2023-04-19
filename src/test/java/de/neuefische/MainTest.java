@@ -26,4 +26,24 @@ class MainTest {
         assertEquals("4", Main.modulus(4));
     }
 
+    @Test
+    void testBiggerThenZero() {
+       assertTrue(Main.smallerThenZero(99));
+    }
+
+    @Test
+    void testSmallerThenZero() {
+        assertFalse(Main.smallerThenZero(-99));
+    }
+
+    @Test
+    void testFirstNumberBiggerThenAddition() {
+       assertEquals(11, Main.sumSquareOrSubstract(6, 5));
+    }
+
+    @Test
+    void testFirstNumberSmallerThenMultiplication() {
+        assertEquals(30, Main.sumSquareOrSubstract(5, 6));
+    }
+
 }
