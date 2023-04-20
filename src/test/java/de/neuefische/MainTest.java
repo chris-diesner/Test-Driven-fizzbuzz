@@ -27,22 +27,22 @@ class MainTest {
     }
 
     @Test
-    void testBiggerThenZero() {
+    void retrunBiggerThenZero() {
        assertTrue(Main.smallerThenZero(99));
     }
 
     @Test
-    void testSmallerThenZero() {
+    void returnSmallerThenZero() {
         assertFalse(Main.smallerThenZero(-99));
     }
 
     @Test
-    void testFirstNumberBiggerThenAddition() {
+    void returnFirstNumberBiggerThenAddition() {
        assertEquals(11, Main.sumSquareOrSubstract(6, 5));
     }
 
     @Test
-    void testFirstNumberSmallerThenMultiplication() {
+    void returnFirstNumberSmallerThenMultiplication() {
         assertEquals(30, Main.sumSquareOrSubstract(5, 6));
     }
 
